@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+body {
+    background: red;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #1b307d 0%, #38703d 28.53%, #151339 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.hero-text h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img img {
+    width: 300px;
+    height: auto;
+    float: inline-end;
+}
+
+.hero-text a {
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid tranparent;
+    padding: 12px 40px;
+    margin: 0 15px;
+    line-height: 1.4;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.55s ease;
+}
+
+.hero-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+/* .hero-text a.ctaa {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+} */
+
+.hero-text a.ctaa i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    margin: 26px 0;
+    color: white;
+    font-size: 24px;
+    transition: all .50s ease;
+}
+
+.icons i:hover {
+    color: #4d9559;
+    transform: translateY(-5px);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+    background: #784d95;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.scroll-down i:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width:1535px) {
+    header {
+        padding: 15px 3%;
+    }
+
+    .icons {
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .scroll-down {
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width:1460px) {
+    section {
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width:1340px) {
+    header a {
+        margin-left: 55px;
+    }
+
+    .hero-img img {
+        width: 60%;
+        height: auto;
+        padding-right: 20px;
+        float: right;
+    }
+
+    .hero-text h1 {
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+
+    .hero-text h5 {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:1195px) {
+
+    .hero-text {
+        margin-left: 25px;
+    }
+
+    section {
+        padding: 0 3%;
+        transition: .3s;
+    }
+
+    .hero {
+        min-height: 58vh;
+    }
+
+    .hero-text {
+        padding-top: 115px;
+    }
+
+    .hero-img {
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 350px;
+        height: auto;
+        float: none;
+    }
+
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media (max-width:990px) {
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 50vh;
+        border-radius: 10px;
+        margin-right: 15px;
+        background: #52b8b6;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+        transition: all .55s ease;
+    }
+
+    .navlist a {
+        display: block;
+        margin: 10px 0;
+        margin-left: 0;
+    }
+
+    .navlist.open {
+        right: 0;
+    }
+}
+
+@media (max-width:680px) {
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ABOUT */
+
+.about h1 {
+    padding: 30px 5px;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.about h1 hr {
+    height: 5px;
+    width: 102px;
+    border: 5px solid white;
+}
+
+.row {
+    color: white;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 35%;
+}
+
+.column.side img {
+    width: 280px;
+    height: auto;
+}
+
+.column.middle {
+    width: 65%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:900px) {
+    .column.side img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .column.side img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+
+    .column.side img {
+        left: 50%;
+        width: auto;
+        height: 50%;
+        padding: 0 15px;
+    }
+}
+
+
+
