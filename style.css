@@ -103,7 +103,6 @@ section {
 .hero-img img {
     width: 300px;
     height: auto;
-    float: inline-end;
 }
 
 .hero-text a {
@@ -235,7 +234,7 @@ section {
     }
 
     .hero {
-        min-height: 58vh;
+        min-height: 160vh;
     }
 
     .hero-text {
@@ -262,7 +261,7 @@ section {
         display: none;
     }
 
-    .scroll-down {
+.scroll-down {
         display: none;
     }
 }
@@ -377,6 +376,3 @@ section {
         padding: 0 15px;
     }
 }
-
-
-
